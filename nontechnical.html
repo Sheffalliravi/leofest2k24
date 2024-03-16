@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Technical Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    }
+    *::selection{
+    background: #f00;
+    color: #fff;
+}
+.lion{
+  width: 12rem;
+  margin-left: 93%;
+}
+:root{
+    --primary-color: #f14f4f;
+    --secondary-color: #ffffff;
+}
+
+html{
+    font-size: 62%;
+    overflow-x: hidden ;}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("lion.png");
+}
+header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 1000;
+    height:fit-content;
+    background-color: rgba(26, 26, 36, 0.765);
+}
+header .navbar a{
+    display:inline-block;
+    justify-content:center;
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+header .navbar a:hover{
+    color:  red;
+}
+header .bg-nav{
+    display: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  height: 100%;
+
+  background-size: cover;
+}
+.main{
+  max-width: 1200px;
+  margin: 15rem auto;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom right,rgba(26, 26, 36, 0.884) 40%, #2c2a29 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+/* for nav*/
+
+@media(max-width:992px){
+    html{
+        font-size: 60%;
+    }
+    section{
+        padding: 0 5%;
+    }
+    header{
+        padding:2rem 5%;
+    }
+    .home .content h3{
+        font-size: 3.3rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 59%;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        left: 0;
+        top: -300px;
+        width: 100%;
+        background:rgba(26, 26, 36, 0.884);
+        padding: 1rem 5%;
+        
+        overflow: hidden;
+        transform: .8s;
+        z-index: -2;
+    }
+    header .navbar.slide{
+        top: 100%;
+    }
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+    header .bitlogo1{
+        position: absolute;
+        right: 12%;   
+    }
+    header .bg-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;height:fit-content;
+        background-color: rgba(26, 26, 36, 0.671);
+        z-index: -1;
+        transition: 1s;
+    }
+    section{
+        height:fit-content;
+    }
+}
+
+@media(max-width:660px){
+    html{
+        font-size: 55%;
+    }
+    header .navbar.slide{
+        top: 78px;
+    }
+}
+@media(max-width:330px){
+    html{
+        font-size: 50%;
+    }
+    head .bitlogo1{
+        right: 15%;
+    }
+}
+</style>
+</head>
+<body>
+  <header>
+    <img src="images/bann.png" alt="LOGO" class="bitlogo">
+    <i class="fa-solid fa-bars toggle-btn"></i>
+    <nav class="navbar">
+      <a href="index.html">HOME</a>
+      <div class="dropdown">
+          <a href="#">EVENTS <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+              <a href="home-to-techevent-loader.html">Technical Events</a>
+              <a href="home-to-nontech-loader.html">Non-Technical Events</a>
+          </div>
+      </div>
+      <a href="acc.html">ACCOMMODATION</a>
+      <a class="reg" href="resgister.html">REGISTER</a>
+  </nav>
+  
+    <img src="images/leo.png" alt="leo-logo" class="bitlogo1">
+    <div class="bg-nav"></div>
+</header>
+    <div class="main">
+		<ul class="cards">
+		<li class="cards_item">
+			<div class="card">
+			<div class="card_image"><img src="images/ipl.jpg" alt=""></div>
+			<div class="card_content">
+				<h1 class="card_title">Bidding Bash</h1>
+				<br>
+				<a href="biding.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/START.jpg"></div>
+			  <div class="card_content">
+				<h2 class="card_title">Cinephilia</h2><br>
+				<a href="Cinephilia.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/sketch-img.jpg"></div>
+			  <div class="card_content">
+				<h2 class="card_title">Sketch The Art</h2><br>
+				<a href="art.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/MYSTERY UNEARTHED (5).png"></div>
+			  <div class="card_content">
+				<h2 class="card_title">Mystery Unearthed</h2><br>
+
+				<a href="quiz.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/cinemato.jpg"></div>
+			  <div class="card_content">
+				<h2 class="card_title">Action and Cut</h2><br>
+				<a href="Cinematography.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="images/memeathon.png"></div>
+          <div class="card_content">
+          <h2 class="card_title">Meme-a-Thon</h2><br>
+          <a href="meme.html"><button class="btn card_btn">Read More</button></a>
+          </div>
+        </div>
+        </li>
+		</ul>
+	  </div>
+</body>
+<script>
+    const bars = document.querySelector('.toggle-btn');
+const navbar = document.querySelector('header .navbar'); 
+bars.addEventListener('click',function(){
+    if(bars.classList.contains('fa-bars')){
+        bars.classList.remove('fa-bars');
+        bars.classList.add('fa-xmark');
+        navbar.classList.add('slide');
+    }
+    else {
+        bars.classList.remove('fa-xmark');
+        bars.classList.add('fa-bars');
+        navbar.classList.remove('slide');
+    }
+})
+</script>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slide = document.querySelector('.slide');
+    
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            slide.appendChild(items[0].cloneNode(true));
+            slide.removeChild(items[0]);
+        });
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            slide.insertBefore(items[items.length - 1].cloneNode(true), items[0]);
+            slide.removeChild(items[items.length - 1]);
+        });
+    });
+    
+</script>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    }
+    *::selection{
+    background: #f00;
+    color: #fff;
+}
+:root{
+    --primary-color: #f14f4f;
+    --secondary-color: #ffffff;
+}
+
+html{
+    font-size: 62%;
+    overflow-x: hidden ;
+    background-color: rgba(26, 26, 36, 0.671);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+
+
+html {
+  
+}
+body {
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  background-color: black;
+  padding: 1rem;
+  background-size: cover;
+  height: 100%;
+  opacity: 5;
+
+}
+.main{
+  max-width: 1200px;
+  margin: 15rem auto;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom right,rgba(26, 26, 36, 0.884) 40%, #2c2a29 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+header .navbar a.reg {
+    background: linear-gradient(90deg, rgb(217, 204, 65) 0%, rgb(186, 163, 51) 35%, rgba(140,165,115,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;
+}
+</style>
+</head>
+<body>
+  <header>
+    <img src="images/bann.png" alt="LOGO" class="bitlogo">
+    <i class="fa-solid fa-bars toggle-btn"></i>
+    <nav class="navbar">
+      <a href="index.html">HOME</a>
+      <div class="dropdown">
+          <a href="#">EVENTS <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+              <a href="home-to-techevent-loader.html">Technical Events</a>
+              <a href="home-to-nontech-loader.html">Non-Technical Events</a>
+          </div>
+      </div>
+      <a href="acc.html">ACCOMMODATION</a>
+      <a class="reg" href="resgister.html">REGISTER</a>
+  </nav>
+    <img src="images/leo.png" alt="leo-logo" class="bitlogo1">
+    <div class="bg-nav"></div>
+</header>
+    <div class="main">
+		<ul class="cards">
+		<li class="cards_item">
+			<div class="card">
+			<div class="card_image"><img src="images/paper-img1.jpeg" alt=""></div>
+			<div class="card_content">
+				<h2 class="card_title">Paper Presentation</h2><br>
+				<a href="paper.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/idea.jpg" alt=""></div>
+			  <div class="card_content">
+				<h2 class="card_title">Ideathon</h2><br>
+				<a href="project.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/codefest-img1.jpeg" alt=""></div>
+			  <div class="card_content">
+				<h2 class="card_title">Fixit Fest</h2><br>
+				<a href="codefest.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/designfest-img.jpg"></div>
+			  <div class="card_content">
+				<h2 class="card_title">Design Fiesta</h2><br>
+				<a href="designfest.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+		  <li class="cards_item">
+			<div class="card">
+			  <div class="card_image"><img src="images/ro.jpg"></div>
+			  <div class="card_content">
+				<h2 class="card_title">RoboRevolt</h2><br>
+				<a href="Robotics.html"><button class="btn card_btn">Read More</button></a>
+			  </div>
+			</div>
+		  </li>
+</body>
+<script>
+    const bars = document.querySelector('.toggle-btn');
+const navbar = document.querySelector('header .navbar'); 
+bars.addEventListener('click',function(){
+    if(bars.classList.contains('fa-bars')){
+        bars.classList.remove('fa-bars');
+        bars.classList.add('fa-xmark');
+        navbar.classList.add('slide');
+    }
+    else {
+        bars.classList.remove('fa-xmark');
+        bars.classList.add('fa-bars');
+        navbar.classList.remove('slide');
+    }
+})
+</script>
+</html>
